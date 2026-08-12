@@ -29,8 +29,8 @@ export default function Experience() {
           </div>
           <div className="exp-right">
             <p className="lede">
-              Two internships, one theme: shipping real features under real constraints,
-              working in an agile team of 5 with Git branching and PR reviews.
+              Two internships, one theme: shipping real features under real constraints.
+             
             </p>
             <div className="tag-row">
               <span className="tag-black">#Internship</span>

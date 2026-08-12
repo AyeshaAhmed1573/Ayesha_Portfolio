@@ -8,11 +8,10 @@ export default function About() {
           <span className="eyebrow">01 — About</span>
           <h2>Hello,<br />I'm Ayesha!</h2>
           <p className="bio">
-            Full-stack developer with hands-on experience in the MERN stack and growing
-            proficiency in Laravel. I've built production-ready features including JWT
+            Full-stack developer with hands-on experience in the MERN stack . I've built production-ready features including JWT
             authentication, RESTful APIs, and multi-store inventory systems — and I'm
             currently finishing my B.Sc. in Computer Science while picking up data science
-            (NumPy, Pandas, Matplotlib, Seaborn) and some graphic design on the side.
+            (NumPy, Pandas, Matplotlib, Seaborn)
           </p>
           <a href="https://www.linkedin.com/in/ayesha-ahmed-7a3b77262/" target="_blank" rel="noopener noreferrer" className="pill" style={{ background: 'var(--orange)' }}>
             🔗 linkedin.com/in/ayeshaahmed

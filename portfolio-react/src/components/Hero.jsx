@@ -27,14 +27,14 @@ export default function Hero() {
             Final-year CS Student — University of Karachi
           </p>
           <p style={{ maxWidth: '34ch', fontSize: '1.05rem', opacity: 0.85, lineHeight: 1.55 }}>
-            MERN &amp; Laravel developer building things that work, and look good doing it.
+            MERN &amp; developer building things that work, and look good doing it.
           </p>
         </div>
       </div>
 
       <div className="hero-tagline-strip">
         <div className="wrap">
-          <p>Full-stack developer with hands-on MERN experience and growing proficiency in Laravel — I like shipping clean, performant code from day one.</p>
+          <p>Full-stack developer with hands-on MERN experience and growing proficiency in Data Science — I like shipping clean, performant code from day one.</p>
         </div>
       </div>
 
