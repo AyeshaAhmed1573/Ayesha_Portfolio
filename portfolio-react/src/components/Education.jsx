@@ -19,7 +19,7 @@ export default function Education() {
               <div className="sub">Al Badar Higher Secondary School</div>
             </li>
             <li>
-              <span className="date">2006 – 2020</span>
+              <span className="date"> 2020</span>
               <div className="role">Matriculation, Biology</div>
               <div className="sub">Al Badar Higher Secondary School</div>
             </li>
