@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 
 export default function Nav() {
   const [onLight, setOnLight] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const hero = document.querySelector('.hero')
@@ -15,16 +16,31 @@ export default function Nav() {
   }, [])
 
   return (
-    <nav className={`nav ${onLight ? 'on-light' : ''}`}>
-      <div className="logo">
-        <span className="spark">✦</span> Ayesha
-      </div>
-      <div className="nav-links">
-        <a href="#about">About</a>
-        <a href="#resume">Resume</a>
-        <a href="#work">Work</a>
-        <a href="#contact" className="pill">Get in touch!</a>
-      </div>
-    </nav>
+    <div>
+      <nav className={`nav ${onLight ? 'on-light' : ''}`}>
+        <div className="logo">
+          <span className="spark">✦</span> Ayesha
+        </div>
+        <button 
+          className={`hamburger ${mobileMenuOpen ? 'open' : ''}`}
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
+          <a href="#about" onClick={() => setMobileMenuOpen(false)}>About</a>
+          <a href="#resume" onClick={() => setMobileMenuOpen(false)}>Resume</a>
+          <a href="#work" onClick={() => setMobileMenuOpen(false)}>Work</a>
+          <a href="#contact" className="pill" onClick={() => setMobileMenuOpen(false)}>Get in touch!</a>
+        </div>
+      </nav>
+      <div 
+        className={`nav-overlay ${mobileMenuOpen ? 'open' : ''}`}
+        onClick={() => setMobileMenuOpen(false)}
+      />
+    </div>
   )
 }
